@@ -1,0 +1,88 @@
+@import url("https://db.onlinewebfonts.com/c/f1a22f6f15d272c7aa56da8b2c91f5e5?family=Circular+Std+Black");
+@import url("https://db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book");
+body {
+    font-family: "Circular Std Black";
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fdfdfd;
+}
+
+#T {
+    display: flex;
+    align-items: stretch;
+    box-shadow: 0 0 10px rgba(71, 71, 71, 0.773);
+    border-radius: 10px;
+}
+
+#right {
+    background-color: #fc436c;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: 20px;
+    padding: 25px;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+#left {
+    background-color: #ffffff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+
+input {
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px;
+    background-color: #fc436c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 15px;
+}
+
+ul {
+    font-family: "Circular Std Book";
+    text-align: left;
+    padding: 0;
+    margin-top: 10px;
+}
+
+li {
+    margin-top: 10px;
+}
+
+#left p {
+    color: #00a5e9;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px; 
+    margin: 5px;
+}
+#left small {
+    font-family: arial;
+    color: #888; 
+    font-size: 10px; 
+    margin: 15px;
+    margin-top:0px; 
+}
+@media only screen and (min-width: 600px) {
+    #T {
+        flex-direction: row;
+    }
+}
