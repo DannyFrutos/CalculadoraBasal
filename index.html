@@ -5,25 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Hidratación basal</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <div id="T">
         <div id="left">
             <h1 id="titulo">Calculadora Basal</h1>
             <small>Completa todos los datos</small>
-            <input type="number" placeholder="Ingrese el peso en Kg" />
-            <button>calcular</button>
-            <p>71cc/h</p>
-            <p>m+m/2 : 105cc/h</p>
+            <input id="peso" type="number" placeholder="Ingrese el peso en Kg" />
+            <button id="a">calcular</button>
+            <p id="error">ERROR: Debe ingresar un peso valido</p>
+            <p id="resultado1"></p>
+            <p id="resultado2"></p>
+            <p id="resultado3"></p>
         </div>
         <div id="right">
-            <div>
-                <h1>¿Cómo se calcula?</h1>
-                <ul>
-                    <li>De 0kg a 10kg, se calcula 100cc por cada kilo</li>
-                    <li>Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta 20kg</li>
-                    <li>De 20kg para arriba, se suman 20cc por cada kilo adicional</li>
-                </ul>
+            <div id="metodoInstrucciones">
+                <h1 id="metodoCalculo"></h1>
+                <div id="instruccionesCalculo"></div>
             </div>
         </div>
     </div>
